@@ -8,4 +8,6 @@ class SpindlerBattery(Battery):
         self.current_date = current_date
 
     def needs_service(self):
-        pass
+        if (last_service_date + 2) > current_date:
+            return True
+        return False
