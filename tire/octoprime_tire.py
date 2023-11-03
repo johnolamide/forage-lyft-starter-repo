@@ -10,7 +10,7 @@ class OctoprimeTire(Tire):
         values_sum = 0
         for value in self.sensor_values:
             values_sum += value
-        if values_sum >= 3:
+        if values_sum >= 3.0:
             return True
         else:
             return False
